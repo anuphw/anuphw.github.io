@@ -20,7 +20,7 @@ var tsArray = [];
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
 var curTime = parseFloat(document.getElementById("myVideo").currentTime);
-if(curTime > lastTime){
+if(curTime > lastTime+0.2){
 var row = $("<tr></tr>");
    var col1 = $("<td></td>");
     lastTime = parseFloat(document.getElementById("myVideo").currentTime);
