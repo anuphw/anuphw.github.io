@@ -19,8 +19,8 @@ var lastTime = -1;
 var tsArray = [];
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
-
-
+var curTime = parseFloat(document.getElementById("myVideo").currentTime);
+if(curTime > lastTime){
 var row = $("<tr></tr>");
    var col1 = $("<td></td>");
     lastTime = parseFloat(document.getElementById("myVideo").currentTime);
@@ -28,7 +28,8 @@ var row = $("<tr></tr>");
    var col2 = $("<td></td>");
     col2.append(keyName);
     tsArray.push([lastTime,keyName]);
-   row.append(col1,col2).prependTo("#mytable");   
+   row.append(col1,col2).prependTo("#mytable");  
+}
 }, false);
 
 function telltime(){
