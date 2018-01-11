@@ -17,17 +17,31 @@
 'use strict';
 var lastTime = -1;
 var tsArray = [];
+var vidPlayTime = 0.0;            
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
 var curTime = parseFloat(document.getElementById("myVideo").currentTime);
-if(curTime > lastTime+0.2){
+    if (event.keyCode === 32){
+        play_pause();
+    } else if (event.keyCode === 65){
+        back1sec();
+    } else if (event.keyCode === 83){
+        back0_1sec();
+    } else if (event.keyCode === 68){
+        forward0_1sec();
+    } else if (event.keyCode === 70){
+        forward1sec();
+    } else if (event.keyCode === 69){
+        exportToCsv('test.csv',tsArray );
+    }
+ else if(curTime > lastTime+0.2){
 var row = $("<tr></tr>");
    var col1 = $("<td></td>");
     lastTime = parseFloat(document.getElementById("myVideo").currentTime);
     col1.append(document.getElementById("myVideo").currentTime);
    var col2 = $("<td></td>");
     col2.append(keyName);
-    tsArray.push([lastTime,keyName]);
+    tsArray.push([vidPlayTime,lastTime,keyName]);
    row.append(col1,col2).prependTo("#mytable");  
 }
 }, false);
@@ -46,9 +60,10 @@ function forward0_1sec(){
 }
 function back1sec(){
     var curTime = parseFloat(document.getElementById("myVideo").currentTime);
+    vidPlayTime = Math.max(0.0,curTime - 1.0);
     while (lastTime > curTime - 1.0){
         document.getElementById("mytable").deleteRow(0);
-        var x = tsArray.pop();
+        // var x = tsArray.pop();
         if (document.getElementById("mytable").rows.length > 0){
             lastTime = parseFloat((document.getElementById("mytable").rows[0].cells)[0].innerHTML);
         } else {
@@ -59,9 +74,10 @@ function back1sec(){
 }
 function back0_1sec(){
     var curTime = parseFloat(document.getElementById("myVideo").currentTime);
+    vidPlayTime = Math.max(0.0,curTime - 0.1);
     while (lastTime > curTime - 0.1){
         document.getElementById("mytable").deleteRow(0);
-        var x = tsArray.pop();
+        // var x = tsArray.pop();
         if (document.getElementById("mytable").rows.length > 0){
             lastTime = parseFloat((document.getElementById("mytable").rows[0].cells)[0].innerHTML);
         } else {
