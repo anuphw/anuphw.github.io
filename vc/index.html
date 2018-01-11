@@ -17,7 +17,7 @@
 'use strict';
 var lastTime = -1;
 var tsArray = [];
-var vidPlayTime = 0.0;            
+            
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
 var curTime = parseFloat(document.getElementById("myVideo").currentTime);
@@ -31,14 +31,6 @@ var curTime = parseFloat(document.getElementById("myVideo").currentTime);
         document.getElementById("myVideo").pause();
         document.getElementById("play-pause").innerHTML = "Pause";
         back0_1sec();
-    } else if (event.keyCode === 68){
-        document.getElementById("myVideo").pause();
-        document.getElementById("play-pause").innerHTML = "Pause";
-        forward0_1sec();
-    } else if (event.keyCode === 70){
-        document.getElementById("myVideo").pause();
-        document.getElementById("play-pause").innerHTML = "Pause";
-        forward1sec();
     } else if (event.keyCode === 69){
         exportToCsv('test.csv',tsArray );
     }
@@ -49,7 +41,7 @@ var row = $("<tr></tr>");
     col1.append(document.getElementById("myVideo").currentTime);
    var col2 = $("<td></td>");
     col2.append(keyName);
-    tsArray.push([vidPlayTime,lastTime,keyName]);
+    tsArray.push(['f',lastTime,keyName]);
    row.append(col1,col2).prependTo("#mytable");  
 }
 }, false);
@@ -68,7 +60,6 @@ function forward0_1sec(){
 }
 function back1sec(){
     var curTime = parseFloat(document.getElementById("myVideo").currentTime);
-    vidPlayTime = Math.max(0.0,curTime - 1.0);
     while (lastTime > curTime - 1.0){
         document.getElementById("mytable").deleteRow(0);
         // var x = tsArray.pop();
@@ -82,7 +73,6 @@ function back1sec(){
 }
 function back0_1sec(){
     var curTime = parseFloat(document.getElementById("myVideo").currentTime);
-    vidPlayTime = Math.max(0.0,curTime - 0.1);
     while (lastTime > curTime - 0.1){
         document.getElementById("mytable").deleteRow(0);
         // var x = tsArray.pop();
@@ -104,7 +94,7 @@ function play_pause(){
             if (tsArray[n-i-1][1] < curTime){
                 break;
             }
-            tsArray[n-i-1][0] = curTime;
+            tsArray[n-i-1][0] = 'r';
             i = i + 1;
         }
         v.play();
@@ -177,8 +167,6 @@ function exportToCsv(filename, rows) {
             <button id="back1sec" onclick="back1sec()">&lt; 1 sec</button>
             <button id="back0_1sec" onclick="back0_1sec()">&lt; 0.1 sec</button>
             <button id="play-pause" onclick="play_pause()">Play </button>
-            <button id="forw1sec" onclick="forward1sec()">1 sec &gt;</button>
-            <button id="forw0_1sec" onclick="forward0_1sec()">0.1 sec &gt;</button>
             <button id="slow-fast" onclick="slow_fast()">Slow</button>
             <button id="export" onclick="exportToCsv('test.csv',tsArray )">Export</button>
             </div>
