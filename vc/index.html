@@ -33,6 +33,18 @@ var curTime = parseFloat(document.getElementById("myVideo").currentTime);
         back0_1sec();
     } else if (event.keyCode === 69){
         exportToCsv('test.csv',tsArray );
+    } else if (event.keyCode === 81){
+    document.getElementById("myVideo").pause();
+    document.getElementById("myVideo").currentTime = 0.0;
+    document.getElementById("play-pause").innerHTML = "Pause";
+    } else if (event.keyCode === 90){
+        var v = document.getElementById("myVideo");
+        v.playbackRate = 0.9*v.playbackRate;
+        document.getElementById("slow-fast").innerHTML = "Speed = " + (Math.round(v.playbackRate*100)/100.0).toString();
+    }else if (event.keyCode === 88){
+        var v = document.getElementById("myVideo");
+        v.playbackRate = v.playbackRate/0.9;
+        document.getElementById("slow-fast").innerHTML = "Speed = " + (Math.round(v.playbackRate*100)/100.0).toString();
     }
  else if(curTime > lastTime+0.2){
 var row = $("<tr></tr>");
@@ -167,7 +179,7 @@ function exportToCsv(filename, rows) {
             <button id="back1sec" onclick="back1sec()">&lt; 1 sec</button>
             <button id="back0_1sec" onclick="back0_1sec()">&lt; 0.1 sec</button>
             <button id="play-pause" onclick="play_pause()">Play </button>
-            <button id="slow-fast" onclick="slow_fast()">Slow</button>
+            <button id="slow-fast">Speed = 1.0</button>
             <button id="export" onclick="exportToCsv('test.csv',tsArray )">Export</button>
             </div>
 
