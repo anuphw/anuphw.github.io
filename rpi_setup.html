@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<header><title>Raspberry Pi Setup</title></header>
+<body>
+    <h3>0. Buy Raspberry Pi</h3>
+    <p>You need following:</p>
+    <ul><li>Raspberry Pi 3 Model B</li>
+    <li>HDMI cable</li>
+    <li>Monitor with HDMI input</li>
+    <li>USB Keyboard/mouse</li>
+    <li>Micro SD card (64 GB) U1 or U3</li>
+        
+    </ul>
+    <h3>1. Installing Raspbian on your PI</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GJDIgS8nres?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+    
+    
+    <h3>2. Installing required softwares</h3>
+    <p>Once the system is installed, reboot and login using following credentials:</p>
+    <p>username: pi<br>
+    password: raspberry</p>
+    
+    <h5>2.1. Turning on WIFI.</h5>
+    <p>You can skip this step if you are planning to use wired connection. Follow the instructions in the following video to connect to wifi.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P589rdL0Rbk?rel=0&amp;start=70" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+    
+    <h5>2.1. Open terminal located in menu bar</h5>
+    <img src="https://cdn-learn.adafruit.com/assets/assets/000/029/894/medium800/raspberry_pi_raspi-terminal.png">
+    </body>
+    
+    <p>The following command will download download a script that will set up the server on Raspberry Pi. You will need internet connection on the raspberry pi. (You can set up wifi by clicking on wifi button in the upper right corner on the screen).</p>
+    <p style="background: gray">wget "https://anuphw.github.io/script.sh" -O /home/pi/script.sh</p>
+    <p>Once you are done with downloading the script run following command. O</p>
+    <p style="background: gray">sudo bash /home/pi/script.sh</p>
+    <p>That's it! Once you are able to execute the last command without errors, it will output you an IP address. Now you can visit "http://the.ip.address/VideoCoding/test.php" (replace the.ip.address with the ip address you get).</p>
+</html>
