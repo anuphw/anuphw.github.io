@@ -1,18 +1,18 @@
-apt-get update && apt-get upgrade
+apt-get update && apt-get -y upgrade
 www_home=/home/pi/www
 
 # If you don't have apache installed install it
-if ! [ -x $(which apache2)  ] ; then 
-	apt-get install apache2
+if ! [[ -x $(which apache2)  ]] ; then 
+	apt-get -y install apache2
 fi
 
 # If you don't have php installed install it
-if ! [ -x $(which php) ] ; then 
-	apt-get install php
+if ! [[ -x $(which php) ]] ; then 
+	apt-get -y install php
 fi
 
 # Check apache installation
-if [ -x $(which apache2)  ] ; then 
+if [[ -x $(which apache2)  ]] ; then 
 	wget "https://anuphw.github.io/apache2.conf" -O /tmp/apache2.conf
 	wget "https://anuphw.github.io/000-default.conf" -O /tmp/000-default.conf
 	wget "https://anuphw.github.io/index.php"  -O /tmp/index.php
@@ -28,18 +28,18 @@ else
 fi
 
 # Check php installation
-if ! [ -x $(which php) ] ; then 
+if ! [[ -x $(which php) ]] ; then 
 	print "Php is not installed. Run 'sudo apt-get install php'"
 	exit 1
 fi
 
 # Download website contents 
 
-wget "https://www.dropbox.com/s/03544uihvjr0a26/VideoCoding.zip?dl=0" -O /tmp/VideoCoding.zip
+wget -c "https://www.dropbox.com/s/03544uihvjr0a26/VideoCoding.zip?dl=0" -O /tmp/VideoCoding.zip
 unzip /tmp/VideoCoding.zip -d "$www_home"
 chmod -R 777 "$www_home"
 
 # Find IP addess
 
-echo "Your IP" $(ifconfig | grep inet | grep broadcast | sed 's/netmask.*//;s/inet //g')
-
+echo "Your IP address(es) " $(ifconfig | grep inet | grep broadcast | sed 's/netmask.*//;s/inet //g')
+ifconfig | grep inet | grep broadcast | sed 's/netmask.*//;s/inet //g' | while read a ; do echo "You can visit http://${a}/VideoCoding/test.php" ; done 
