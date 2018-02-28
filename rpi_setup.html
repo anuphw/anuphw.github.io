@@ -16,7 +16,7 @@
     <p>Download NOOBS OS from <a href="https://www.raspberrypi.org/downloads/noobs/">https://www.raspberrypi.org/downloads/noobs/</a>. Download the <b>Offline and network install</b> version.</p>
     
     <h3>2. Prepare OS</h3>
-    <p>Now you need to format the Micro SD card with FAT32 format. Unzip the NOOBS OS in a folder and copy <b>the contents of that folder</b> (not the folder) to the formatted SD card.</p>
+    <p>Now attach the SD card to the computer and format it with FAT32 file system. Unzip the NOOBS OS (Operating System) in a folder and copy <b>the contents of that folder</b> (not the folder) to the formatted SD card.</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/0O4I4CIRxik?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     
     <h3>3. Preparing the PI [:)]</h3>
@@ -25,8 +25,12 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/TpQdEACXYhA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     
     <h6>3.2 Attach Cables and Power on.</h6>
-    <p>Attach keyboard, mouse, HDMI and Ethernet (if you're not using wifi) cable after inserting the SD card into PI. Once this is done, you can connect the PI to a power source. You should be connected to internet using a wired or wireless connection (either of them is fine).</p>
+    <p>Attach keyboard, mouse, HDMI and Ethernet (if you're not using wifi) after inserting the SD card into PI. Once this is done, you can connect the PI to a power source. You should be connected to internet using a wired or wireless connection (either of them is fine).</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/mhRX5PribpY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <h6>3.3 Installing Rasbian.</h6>
+    <p>Once you attach the power supply the PI will boot up and you can start installing the OS.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VRMgduVrv6k?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <p>At the end of installation process, you will get a message saying <b>OS(es) Installed Sucessfully</b>. Click <b>OK</b> and the PI will reboot.</p>
 
     <h3>4. Installing required softwares.</h3>
@@ -51,10 +55,10 @@
     
     <h5>4.4. Download and install</h5>
     <p>Copy the following line and paste into the terminal window and hit ENTER.</p>
-    <p style="background: gray">wget "https://anuphw.github.io/script.sh" -O /home/pi/script.sh</p>
+    <p style="background: lightgray">wget "https://anuphw.github.io/script.sh" -O /home/pi/script.sh</p>
     
     <p>Once the script is downloaded, copy the following line and paste it into the terminal window then hit ENTER. In case if you need to enter password, the password is <b>raspberry</b>. This will install the required files for coding and it will also download videos for M. Ozil.</p>
-    <p style="background: gray">sudo bash /home/pi/script.sh</p>
+    <p style="background: lightgray">sudo bash /home/pi/script.sh</p>
     
     <p>In case you are asked for yes/no, just say yes.</p>
     
