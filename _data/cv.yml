@@ -1,0 +1,98 @@
+cv:
+  name: Anup Walvekar
+  label: Research Scientist
+  email: anuphw@gmail.com
+  summary: Research Scientist working on generative AI. Interested in mathematical and statistical modeling.
+
+  social_networks:
+    - network: GitHub
+      username: anuphw
+    - network: LinkedIn
+      username: anup-w-90315817
+
+  sections:
+    Experience:
+      - company: InVideo
+        position: Research Scientist
+        location: Mumbai, India
+        url: https://invideo.io
+        start_date: 2023
+        end_date: present
+        highlights:
+          - Generative AI — lipsync and audio enhancement.
+
+      - company: Friday.AI
+        position: ML Consultant
+        location: Singapore
+        start_date: 2021
+        end_date: 2022
+
+      - company: A*STAR
+        position: Development Scientist
+        location: Singapore
+        start_date: 2020
+        end_date: 2021
+
+      - company: National University of Singapore
+        position: Postdoctoral Fellow
+        location: Singapore
+        start_date: 2018
+        end_date: 2020
+
+      - company: Dolat Capital
+        position: Quantitative Researcher
+        location: Mumbai, India
+        start_date: 2010
+        end_date: 2011
+
+    Education:
+      - institution: INSEAD
+        location: Singapore
+        area: Technology & Operations Management
+        studyType: PhD
+        start_date: 2013
+        end_date: 2018
+
+      - institution: IIT Bombay
+        location: Mumbai, India
+        area: Applied Statistics & Informatics
+        studyType: M.Sc.
+        start_date: 2008
+        end_date: 2010
+
+      - institution: Chennai Mathematical Institute
+        location: Chennai, India
+        area: Mathematics & Computer Science
+        studyType: B.Sc.
+        start_date: 2005
+        end_date: 2008
+
+    Publications:
+      - title: "Scanning, contextual factors, and association with performance in English Premier League footballers: an investigation across a season"
+        authors:
+          - G. Jordet
+          - K.M. Aksum
+          - D.N. Pedersen
+          - A. Walvekar
+          - et al.
+        publisher: Frontiers in Psychology
+        releaseDate: 2020
+        url: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.553813/pdf
+
+      - title: "Strategic rule breaking: Time wasting to win soccer games"
+        authors:
+          - H.R. Greve
+          - N. Rudi
+          - A. Walvekar
+        publisher: PLOS ONE
+        releaseDate: 2019
+        url: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0224150&type=printable
+
+      - title: "Rational fouls? Loss aversion on organizational and individual goals influence decision quality"
+        authors:
+          - H.R. Greve
+          - N. Rudi
+          - A. Walvekar
+        publisher: Organization Studies
+        releaseDate: 2021
+        url: https://journals.sagepub.com

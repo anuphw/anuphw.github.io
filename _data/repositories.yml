@@ -1,0 +1,13 @@
+github_repos:
+  - name: zerodha_history
+    url: https://github.com/anuphw/zerodha_history
+    description: Comprehensive P&L report of your Zerodha trading history with benchmark comparisons and risk-adjusted metrics.
+  - name: implied_volatility_analysis
+    url: https://github.com/anuphw/implied_volatility_analysis
+    description: Real-time IV analytics (IV Rank, IV Percentile, IV Mean Ratio) for F&O stocks on NSE — metrics missing from standard brokers.
+  - name: cc-template
+    url: https://github.com/anuphw/cc-template
+    description: Production-ready Claude Code template with specialized agents, parallel execution, and session continuity for complex dev tasks.
+  - name: universal-search-focus
+    url: https://github.com/anuphw/universal-search-focus
+    description: Chrome extension that lets you focus any website's search box by pressing /.
