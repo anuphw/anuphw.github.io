@@ -5,4 +5,4 @@ set -e
 
 git add -A
 git commit -m "${1:-update site}"
-git push origin fresh:master
+git push origin deploy:master
