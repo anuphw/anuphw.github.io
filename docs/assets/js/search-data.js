@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{
+        },{id: "post-all-you-need-is-attention",
+        
+          title: "All You Need Is, Attention!",
+        
+        description: "On when attention is the right tool — and when it isn&#39;t",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/all-you-need-is-attention/";
+          
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
