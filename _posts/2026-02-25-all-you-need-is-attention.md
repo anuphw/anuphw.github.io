@@ -6,6 +6,7 @@ date: 2026-02-25 00:00:00 +0530
 tags: [attention, transformers, multimodal, deep-learning]
 categories: machine-learning
 math: true
+giscus_comments: true
 ---
 
 {% include figure.liquid path="/assets/img/posts/attention-hero.png" alt="Two feature sets of different shapes connected by dynamic lines of light" class="img-fluid" %}
