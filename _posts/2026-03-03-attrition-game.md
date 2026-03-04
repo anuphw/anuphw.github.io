@@ -3,7 +3,7 @@ layout: post
 title: "The Attrition Game"
 description: "Resource depletion, the Strait of Hormuz, and what two prediction markets jointly reveal about the USA–Iran war"
 date: 2026-03-03 00:00:00 +0530
-tags: [game-theory, geopolitics, prediction-markets, war-of-attrition]
+tags: [war-of-attrition, iran, geopolitics, strait-of-hormuz, bayesian-inference, prediction-markets, mathematical-modeling, game-theory]
 categories: essays
 math: true
 giscus_comments: true
