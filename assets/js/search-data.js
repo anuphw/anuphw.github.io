@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-all-you-need-is-attention",
+        },{id: "post-u-s-iran-war-2026-strategic-analysis-dashboard-day-9",
+        
+          title: "U.S.–Iran War 2026 — Strategic Analysis Dashboard (Day 9)",
+        
+        description: "Day 9 — Evidence-based strategic modeling: military capabilities, Hormuz scenarios, escalation paths, economic consequences, and probabilistic forecasting.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/us-iran-war-day9-analysis/";
+          
+        },
+      },{id: "post-all-you-need-is-attention",
         
           title: "All You Need Is, Attention!",
         
