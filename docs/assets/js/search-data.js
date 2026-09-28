@@ -37,7 +37,62 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-all-you-need-is-attention",
+        },{id: "post-the-full-picture-what-the-simulation-tells-us",
+        
+          title: "The Full Picture: What the Simulation Tells Us",
+        
+        description: "An agent-based model with 1,250 individual agents confirms the theoretical predictions — and reveals which policy regimes are most resilient when the breakthrough arrives.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/llm-education-4-full-picture/";
+          
+        },
+      },{id: "post-the-continuous-theory-when-populations-exist-on-a-spectrum",
+        
+          title: "The Continuous Theory: When Populations Exist on a Spectrum",
+        
+        description: "Replacing the two-type model with beta distributions reveals phase transitions, threshold effects, and a surprising principle for where policy intervention has the most leverage.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/llm-education-3-continuous-theory/";
+          
+        },
+      },{id: "post-the-evolving-game-30-years-of-ai-education-dynamics",
+        
+          title: "The Evolving Game: 30 Years of AI Education Dynamics",
+        
+        description: "What happens when the AI education game runs for 30 years — institutional inertia, a mid-game breakthrough shock, and diverging trajectories for high- and low-resource families.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/llm-education-2-evolving-game/";
+          
+        },
+      },{id: "post-the-classroom-game-a-game-theoretic-model-of-ai-in-education",
+        
+          title: "The Classroom Game: A Game-Theoretic Model of AI in Education",
+        
+        description: "A formal four-player game model showing why every country is having the same confused AI-in-schools debate — and what the Nash Equilibrium looks like.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/llm-education-1-classroom-game/";
+          
+        },
+      },{id: "post-the-ai-education-game-a-parent-39-s-guide-to-what-39-s-actually-happening",
+        
+          title: "The AI Education Game: A Parent&#39;s Guide to What&#39;s Actually Happening",
+        
+        description: "A map of the four-player game shaping AI in education — who the players are, what they want, and what outcomes depend on how each moves.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/llm-education-0-parent-guide/";
+          
+        },
+      },{id: "post-all-you-need-is-attention",
         
           title: "All You Need Is, Attention!",
         

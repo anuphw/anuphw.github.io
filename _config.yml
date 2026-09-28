@@ -178,6 +178,7 @@ exclude:
   - docker-compose.yml
   - docker-compose-slim.yml
   - FAQ.md
+  - index.html # legacy standalone homepage; about.md renders /
   - Gemfile
   - Gemfile.lock
   - INSTALL.md
